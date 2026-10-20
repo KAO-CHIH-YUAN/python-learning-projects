@@ -13,9 +13,9 @@ class DownloadVideos(Step):
             
             link = yt.url
             ydl_opts = {
-                'format': 'bestvideo[height<=360]+bestaudio/best[height<=360]',  # ¿ï¾Ü³Ì¨Îªº 144p ©Î¥H¤Uªº¼v¤ù®æ¦¡
-                'outtmpl': 'download_videos/' + yt.id + '.%(ext)s',  # ³]©w¤U¸ü¼v¤ùªºÀx¦s¸ô®|©MÀÉ¦W®æ¦¡
-                'nooverwrites': True,  # ¦pªGÀÉ®×¤w¸g¦s¦b¡A«h¤£ÂÐ»\ÀÉ®×
+                'format': 'bestvideo[height<=360]+bestaudio/best[height<=360]',  # é¸æ“‡æœ€ä½³çš„ 144p æˆ–ä»¥ä¸‹çš„å½±ç‰‡æ ¼å¼
+                'outtmpl': 'download_videos/' + yt.id + '.%(ext)s',  # è¨­å®šä¸‹è¼‰å½±ç‰‡çš„å„²å­˜è·¯å¾‘å’Œæª”åæ ¼å¼
+                'nooverwrites': True,  # å¦‚æžœæª”æ¡ˆå·²ç¶“å­˜åœ¨ï¼Œå‰‡ä¸è¦†è“‹æª”æ¡ˆ
             }
 
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:

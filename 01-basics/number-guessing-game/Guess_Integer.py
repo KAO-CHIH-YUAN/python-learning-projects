@@ -8,7 +8,7 @@ import random
 
 start = input('請輸入隨機數開始值: ')
 end = input('請輸入隨機數結束值: ')
-r = random.randint(int(start), int(start))
+r = random.randint(int(start), int(end))
 count = 0
 
 while True:
